@@ -10,8 +10,8 @@ const jogadorController = {
         .json(
           new ApiResponse(
             true,
-            jogadores,
             "Solicitação realizada com sucesso!",
+            jogadores,
           ),
         );
     } catch (error) {
