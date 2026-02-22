@@ -4,6 +4,11 @@ const clubeService = {
    async getClubes() {
         const clubes = await clubeRepository.getClubes();
         return clubes;
+   },
+
+   async postClube(clube){
+        await clubeRepository.postClube(clube);
+        return true;
    }
 }
 
